@@ -10,7 +10,7 @@ export class Workshop0Component {
   labels: string[] = [];
 
   constructor() {
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i <= 25; i++) {
       this.labels.push('' + i);
     }
   }

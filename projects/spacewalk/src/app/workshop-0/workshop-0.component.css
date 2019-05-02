@@ -1,5 +1,7 @@
 :host {
-  display: block;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 20px;
 }
 
@@ -11,4 +13,12 @@ div {
   border: 3px solid darkblue;
   border-radius: 10px;
   background-color: rgba(0, 0, 100, 0.25);
+}
+
+div[title='3'] {
+  grid-row: 2;
+  /* grid-column: 3 /span 2; */
+  grid-column: 3 / -1;
+  border: 4 solid blue;
+  background-color: teal
 }
