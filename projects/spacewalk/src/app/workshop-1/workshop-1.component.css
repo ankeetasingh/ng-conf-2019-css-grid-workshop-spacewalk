@@ -1,6 +1,48 @@
 .sandbox {
   background-color: lightblue;
   padding: 20px;
+  display: grid;
+  grid-gap: 24px;
+
+  /* grid-template-areas:
+    " header header"
+    " carl main "
+    " footer footer"
+    " pbd pbd "
+    " aside aside " */
+
+  grid-template:
+    " header header" 150px
+    " carl main " auto
+    " aside aside " auto
+    " footer footer" auto
+    " pbd pbd " auto
+    / 2fr 5fr
+
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+.carl {
+  grid-area: carl;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.pbd {
+  grid-area: pbd;
+}
+
+aside {
+  grid-area: aside;
 }
 
 .sandbox > * {
